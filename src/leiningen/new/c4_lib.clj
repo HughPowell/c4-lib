@@ -10,7 +10,6 @@
       [proj-name github-username full-name]
       (let [data {:name              (name-to-path proj-name)
                   :project-name      (project-name proj-name)
-                  :sanitized         (name-to-path proj-name)
                   :github-username   github-username
                   :full-name         full-name
                   :year              (year)
@@ -24,5 +23,6 @@
                     ["LICENSE" (render "LICENSE" data)]
                     ["project.clj" (render "project.clj" data)]
                     ["README.md" (render "README.md" data)]
-                    ["src/{{sanitized}}/v1/public.clj" (render "public.clj" data)]
-                    ["test/{{sanitized}}/v1/public_test.clj" (render "public_test.clj" data)])))
+                    ["deploy/travis_to_clojars.sh" (render "travis_to_clojars.sh" data)]
+                    ["src/{{name}}/v1/public.clj" (render "public.clj" data)]
+                    ["test/{{name}}/v1/public_test.clj" (render "public_test.clj" data)])))

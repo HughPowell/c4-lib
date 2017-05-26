@@ -22,4 +22,5 @@ script: lein test
 #deploy:
 #  skip_cleanup: true
 #  provider: script
-#  script: ./scripts/deploy.sh
+# Make sure this script is executable (e.g. run chmod +x deploy/travis_to_clojars.sh)
+#  script: ./deploy/travis_to_clojars.sh

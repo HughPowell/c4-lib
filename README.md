@@ -1,6 +1,6 @@
 # c4-lib
 
-Template that is C4, MPLv2 and has Travis and Clojars Continuous Deployment
+Template that is C4, MPLv2 and has Travis to Clojars Continuous Deployment
 
 ## Usage
 
@@ -10,7 +10,7 @@ Use the following leiningen command to create a new library called library-name
 
 ### Continuous Deployment
 
-Continuous Deployment requires secure environment variables so deployment is initially disabled in the .travis.yml file.  To enable Continuous Deployment add the required secure variables ([Clojars](https://clojars.org/) username and password, [GitHub secure token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and the releasers email address) securely and uncomment the deploy section.
+Continuous Deployment requires secure environment variables so this is initially disabled in the .travis.yml file.  To enable Continuous Deployment add the required secure variables ([Clojars](https://clojars.org/) username and password, [GitHub secure token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) and the releasers email address) securely and uncomment the deploy section.
 
 ## Hacking on this Template
 
