@@ -1,4 +1,4 @@
-(defproject c4-lib/lein-template "0.1.0-SNAPSHOT"
+(defproject c4-lib/lein-template "0.1.0"
   :description "Template that is C4, MPLv2 and has Travis to Clojars Continuous Deployment"
   :url "https://github.com/HughPowell/c4-lib"
   :license {:name "Mozilla Public License v2.0"
