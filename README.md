@@ -7,13 +7,13 @@ Template that is C4, MPLv2 and has Travis to Clojars Continuous Deployment
 
 ## Usage
 
-Use the following leiningen command to create a new library called <new-library-name>
+Use the following leiningen command to create a new library called [new-library-name]
 
-    lein new c4-lib <new-library-name> <github-username> <your-name>
+    lein new c4-lib [new-library-name] [github-username] [your-name]
 
 where
- * <github-username> is your GitHub user name (or that of the organisation that will own this library)
- * <your-name> is your name (e.g. "Joe Bloggs")
+ * [github-username] is your GitHub user name (or that of the organisation that will own this library)
+ * [your-name] is your name (e.g. "Joe Bloggs")
 
  e.g.
 
