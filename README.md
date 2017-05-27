@@ -1,5 +1,8 @@
 # c4-lib
 
+[![Build Status](https://travis-ci.org/HughPowell/c4-lib-template.svg?branch=master)](https://travis-ci.org/HughPowell/c4-lib-template)
+[![Clojars Project](https://img.shields.io/clojars/v/c4-lib/lein-template.svg)](https://clojars.org/c4-lib/lein-template)
+
 Template that is C4, MPLv2 and has Travis to Clojars Continuous Deployment
 
 ## Usage
