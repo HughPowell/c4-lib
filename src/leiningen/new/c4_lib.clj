@@ -8,8 +8,8 @@
 (defn c4-lib
       "Creates a project that is C4, MPLv2 and has Travis and Clojars Continuous Deployment"
       [proj-name github-username full-name]
-      (let [data {:name              (name-to-path proj-name)
-                  :project-name      (project-name proj-name)
+      (let [data {:name              (project-name proj-name)
+                  :project-path      (name-to-path proj-name)
                   :github-username   github-username
                   :full-name         full-name
                   :year              (year)
@@ -24,5 +24,5 @@
                     ["project.clj" (render "project.clj" data)]
                     ["README.md" (render "README.md" data)]
                     ["deploy/travis_to_clojars.sh" (render "travis_to_clojars.sh" data)]
-                    ["src/{{name}}/v1/public.clj" (render "public.clj" data)]
-                    ["test/{{name}}/v1/public_test.clj" (render "public_test.clj" data)])))
+                    ["src/{{project-path}}/v1/public.clj" (render "public.clj" data)]
+                    ["test/{{project-path}}/v1/public_test.clj" (render "public_test.clj" data)])))
